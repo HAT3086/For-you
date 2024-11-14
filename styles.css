@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('bdbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#password-page {
+    background-color: rgba(255, 235, 59, 0.8); /* Semi-transparent yellow */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 50px;
+}
+
+#password-page h1 {
+    color: #333;
+}
+
+#password-page input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+#password-page button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#password-page button:hover {
+    background-color: #45a049;
+}
+
+#password-page::before, #password-page::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('56b9422144318c48bb94b9583196e198.jpg') no-repeat center center;
+    background-size: contain;
+}
+
+#password-page::before {
+    top: -50px;
+    left: -50px;
+}
+
+#password-page::after {
+    bottom: -50px;
+    right: -50px;
+}
+
+#countdown-page {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#fireworks {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background: url('happy-cats-19324.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation: sparkle 1s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+#images img {
+    width: 300px;
+    margin: 10px;
+}
+
+#images-page {
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+#bottom-text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+#present-page {
+    margin-top: 50px;
+}
+
+#present-button {
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="password-page">
+        <h1>Nhập mật khẩu *siêu dễ*</h1>
+        <input type="password" id="password" placeholder="MM/DD/YYYY">
+        <button onclick="checkPassword()">Xác nhận</button>
+    </div>
+
+    <div id="countdown-page" style="display:none;">
+        <h1 id="countdown"></h1>
+        <h1 id="announcement" style="display:none;">Chúc mừng sinh nhật Pê cuti!<br>I am not the first yet maybe the last</h1>
+        <div id="fireworks" style="display:none;"></div>
+    </div>
+
+    <div id="present-page" style="display:none;">
+        <h1>Tặng kiểu này chắc là nhận nhỉ &#129402</h1>
+        <button id="present-button" onclick="openPresent()">🎁</button>
+    </div>
+
+    <div id="images-page" style="display:none;">
+        <div id="images">
+            <img src="matcha-cheesecake-image-1200.jpg" alt="Image 1">
+            <img src="4.0.png" alt="Image 2">
+            <img src="wealth-health-happiness-success-words-wooden-blocks-3d-illustration_764664-24134.png" alt="Image 3">
+        </div>
+        <p id="bottom-text">Định tặng thêm đồ ăn nhưng mà đêm rồi &#127776 Hope you like it and have a sweet dream &#128150</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
